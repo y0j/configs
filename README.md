@@ -1,0 +1,4 @@
+configs
+=======
+
+*nix configuration files
