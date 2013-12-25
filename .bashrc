@@ -1,5 +1,5 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
-export PS1='\[\033[01;31m\]\u\[\033[01;33m\]@\[\033[01;32m\]\h \[\033[01;33m\]\w$(__git_ps1 " (%s)") \[\033[01;35m\]\$ \[\033[00m\]'
+PS1='\[\033[01;31m\]\u\[\033[01;33m\]@\[\033[01;32m\]\h \[\033[01;33m\]\w$(__git_ps1 " (%s)") \[\033[01;35m\]\$ \[\033[00m\]'
 umask 022
 
 export LS_OPTIONS='--color=auto -h'
