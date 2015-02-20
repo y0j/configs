@@ -173,3 +173,6 @@ autocmd BufReadPost *
   \ if line("'\"") > 0 && line("'\"") <= line("$") | 
   \   exe "normal g'\"" | 
   \ endif
+  
+" Auto-save a file when you leave insert mode
+autocmd InsertLeave * if expand('%') != '' | update | endif
