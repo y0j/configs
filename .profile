@@ -5,6 +5,9 @@
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
+# brew install bash-completion
+source /usr/local/etc/profile.d/bash_completion.sh
+
 # brew install bash
 # For git, shows the current branch
 source /usr/local/etc/bash_completion.d/git-prompt.sh
@@ -26,3 +29,7 @@ export GREP_OPTIONS="--color=always"
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
+
+alias k='kubectl'
+complete -F __start_kubectl k
+source <(kubectl completion bash)
