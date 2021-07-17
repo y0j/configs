@@ -33,3 +33,5 @@ fi
 alias k='kubectl'
 complete -F __start_kubectl k
 source <(kubectl completion bash)
+
+export LC_ALL=en_US.UTF-8
